@@ -20,6 +20,7 @@
     font-size:29rpx;
     vertical-align: middle;
     color:#d5cecb;
+    line-height:50rpx;
 }
 .content-text-01{
     font-size:36rpx;
@@ -30,7 +31,7 @@
 .content-text-03{
     font-size:36rpx;
     color:yellow;
-    line-height:100rpx;
+    line-height:80rpx;
 }
 .content-casts{
     display: inline-block;
@@ -44,6 +45,13 @@
     border-bottom:1px solid #ccc;
 }
 .content-btn button{
+    display: inline-block;
+    width: 250rpx;
+    height:100rpx;
+    margin-top: 14rpx;
     color:white;
     background: #3097fd;
+}
+.content-btn button:last-child{
+    margin-left:50rpx;
 }

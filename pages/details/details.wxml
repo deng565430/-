@@ -22,9 +22,7 @@
     </view>
     <view>
       <text wx:for="{{info.directors}}" wx:for-item="i" class="content-text"> {{i.name}}/</text>
-    </view>
-    <view>
-      <text wx:for="{{info.casts}}" wx:for-item="i" class="content-text"> {{i.name}}/</text>
+      <text wx:for="{{info.casts}}" wx:for-item="item" class="content-text"> {{item.name}}/</text>
     </view>
     <view class="content-text">
       <text>上映年份{{info.year}}</text>
@@ -32,7 +30,8 @@
   </view>
 </view>
 <view class="content-btn">
-  <button type="frimary">点击播放</button>
+  <button type="frimary">想看</button>
+  <button type="frimary">评分</button>
 </view>
 <view style="padding-top:30rpx;">
 演出人员：

@@ -4,10 +4,18 @@ var app = getApp()
 Page({
   data: {
     userInfo: {},
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
     count: 20,
     start: 0,
     isBottom: false,
-    list: []
+    list: [],
+    imgUrls:[
+      "../../images/ShufflingFigure-01.jpeg",
+      "../../images/ShufflingFigure-03.jpg",
+      "../../images/ShufflingFigure-04.jpg",
+    ]
   },
   //事件处理函数
   bindViewTap: function () {

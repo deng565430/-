@@ -38,7 +38,7 @@
   font-size: 40rpx;
 }
 .content-grade:last-child{
-  top:140rpx;
+  top:170rpx;
 }
 .content-grade button{
   width: 115rpx;
