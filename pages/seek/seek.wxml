@@ -1,0 +1,41 @@
+<!-- 搜索电影 -->
+<view class="bodys">
+  <view class="seeks">
+    <input placeholder="点击搜索你想看的电影/演员/导演" focus bindinput="bindinput"/>
+    <button type="primary"  bindtap="seeksMovie" data-value="../soMovie/soMovie?id={{value}}"> 点击搜索 </button>
+  </view>
+      <view class="video-hot">
+        <view class="video-box">
+            <text>影院热映</text>
+            <text>更多 ></text>               
+        </view>
+        <scroll-view scroll-x="true" style="width: 100%;">
+            <view style="width: 1800rpx;">
+              <image src="../../images/movie001.jpeg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie002.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie003.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie004.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie005.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie006.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+            </view>
+        </scroll-view>
+ 
+      </view>
+
+      <view class="video-soon">
+        <view class="video-box">
+            <text>影院即将上映</text>
+            <text>更多 ></text>               
+        </view>
+          <scroll-view scroll-x="true" style="width: 100%;">
+            <view style="width: 1800rpx;">
+              <image src="../../images/movie004.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie005.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie006.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie001.jpeg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie002.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+              <image src="../../images/movie003.jpg" mode="aspectFit" style="width:300rpx;height:420rpx;" ></image>
+            </view>
+        </scroll-view>
+      </view>
+</view>

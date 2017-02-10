@@ -1,0 +1,43 @@
+
+.mytitle{
+  width: 100%;
+  height: 60rpx;
+  border-bottom: 1rpx solid black;
+  color:white;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 40rpx;
+  background: #303030;
+  font-weight: bold;
+}
+.content{
+  padding-top: 15rpx;
+  background: #393939;
+  color: white;
+  border-bottom: 7rpx solid #4d4d4d;
+  position: relative;
+  height: 225rpx;
+}
+.content-img{
+  display: inline-block;
+}
+.content-text{
+  display: inline-block;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  color: #ccc;
+  line-height: 70rpx;
+   vertical-align: top;
+}
+.content-grade{
+  color:red;
+  position: absolute;
+  right: 20rpx;
+  top:20rpx;
+}
+.list-loadtxt {
+  text-align: center;
+  font-size: 30rpx;
+  padding: 16rpx;
+}
+

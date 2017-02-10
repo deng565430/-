@@ -1,0 +1,19 @@
+<view></view>
+<view class="mytitle">{{title}}</view>
+<view wx:for="{{list}}" class="content" data-movieurl="../details/details?id={{item.id}}" bindtap="bindViewTap">
+  <view  class="content-img">
+    <image style="width: 170rpx; height: 210rpx;" src="{{item.images.medium}}"  class="content-image" ></image>
+    <view class="content-text">
+        <view>名称：{{item.title}}</view>
+        <view>  {{item.original_title}}({{item.year}})</view>
+        <view>类型：{{item.genres}}</view>
+        <view class="content-grade">{{item.rating.average}}</view>
+    </view>
+  </view>
+</view>
+ <view class="list-loadtxt" wx:if="{{(!list||list.length<=0)}}">
+      <text>列表数据为空</text>
+    </view>
+    <view class="list-loadtxt" wx:if="{{isBottom}}">
+      已加载到最低端
+    </view>

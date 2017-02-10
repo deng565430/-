@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/movie/movies",
+    "pages/details/details",
+    "pages/seek/seek",
+    "pages/soMovie/soMovie"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2a2a29",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "即将上映",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-actived.png"
+      },
+      {
+        "pagePath": "pages/movie/movies",
+        "text": "电影TOP榜",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movie-actived.png"
+      },
+      {
+        "pagePath": "pages/seek/seek",
+        "text": "搜索电影",
+        "iconPath": "images/seek.png",
+        "selectedIconPath": "images/seek-actived.png"
+      }
+    ],
+    "position": "bottom",
+    "backgroundColor": "#2a2a29",
+    "color": "white",
+    "selectedColor": "#3a862f"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

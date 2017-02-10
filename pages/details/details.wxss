@@ -1,0 +1,16 @@
+.content{
+    background: #353535;
+    font-size: 45rpx;  
+    color:white;     
+}
+.content-images{
+    text-align: center;
+}
+.content-text{
+    font-size:35rpx;
+    vertical-align: middle;
+}
+content-casts .content-casts-img{
+    display: inline-block;
+    padding: 20rpx;
+}

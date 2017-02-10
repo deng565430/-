@@ -1,0 +1,45 @@
+<!--pages/details/details.wxml-->
+<view class="content">
+    <view class="content-images">
+        <image src="{{info.images.large}}" style="width:450rpx;height:600rpx;"></image>
+    </view>   
+    <view>
+        <view>
+        名称：
+            <text class="content-text">{{info.title}}</text>
+        </view>
+        <view>
+        类型：
+            <text class="content-text">{{info.genres}}</text>
+        </view>
+        <view>
+            导演：
+            <text wx:for="{{info.directors}}" wx:for-item="i" class="content-text"> {{i.name}} / </text>
+        </view>
+        
+        <view>
+            主演：
+            <text wx:for="{{info.casts}}" wx:for-item="i" class="content-text"> {{i.name}} / </text>
+        </view>
+        <view>
+            <button>点击播放</button>
+        </view>
+        <view>
+            <scroll-view scroll-x="true" style="width: 100%;">
+            <view style="width: 1500rpx;">
+                <image wx:for="{{info.casts}}" wx:for-item="item" class="content-casts-img" style="width:300rpx;height:420rpx;" src="{{item.avatars.large}}"></image>  
+                </view>
+            </scroll-view>
+               
+        </view>
+        <view>
+                <text>上映年份{{info.year}}</text>
+        </view>
+        
+        <view>
+            简介：
+                <text style="font-size:35rpx;">{{info.summary}}</text>
+        </view>
+            
+        </view>
+</view>

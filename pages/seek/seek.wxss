@@ -1,0 +1,37 @@
+.bodys{
+  background: #eee;
+}
+.seeks{
+ padding: 20rpx 0; 
+}
+
+.seeks input{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: white;
+  margin:0 0 20rpx 0;
+}
+.swiper-box{ 
+    display: block;
+}  
+.video-hot, .video-soon{
+    background-color: #fff; 
+    margin-top: 20rpx; 
+    padding: 30rpx;
+}
+
+.video-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+.video-box text:nth-child(1){
+    font-size: 32rpx; 
+    font-weight: bold;
+}
+.video-box text:nth-child(2){
+    font-size: 30rpx; 
+    color: #42BD56;
+}
