@@ -9,7 +9,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#2a2a29",
+    "navigationBarBackgroundColor": "#3097fd",
     "navigationBarTitleText": "电影",
     "navigationBarTextStyle":"white"
   },
@@ -35,8 +35,8 @@
       }
     ],
     "position": "bottom",
-    "backgroundColor": "#2a2a29",
-    "color": "white",
+    "backgroundColor": "#ececec",
+    "color": "black",
     "selectedColor": "#3a862f"
   },
   "networkTimeout": {

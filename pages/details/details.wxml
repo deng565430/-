@@ -1,45 +1,52 @@
+
 <!--pages/details/details.wxml-->
 <view class="content">
-    <view class="content-images">
-        <image src="{{info.images.large}}" style="width:450rpx;height:600rpx;"></image>
-    </view>   
+  <view class="content-images">
+    <image src="{{info.images.large}}" style="width:300rpx;height:450rpx;"></image>
+  </view>
+  <view class="content-right">
+    <view  class="content-text-01">
+      <text>{{info.title}}</text>
+    </view>
+    <view class="content-text-02">
+      <text>{{info.original_title}}</text>
+    </view>
+    <view class="content-text">
+      <text>{{info.genres}}</text>
+    </view>
+    <view class="content-text">
+      <text>({{info.collect_count}}人评分)</text>
+    </view>
+     <view class="content-text-03">
+      <text>{{info.comments_count}}人想看</text>
+    </view>
     <view>
-        <view>
-        名称：
-            <text class="content-text">{{info.title}}</text>
-        </view>
-        <view>
-        类型：
-            <text class="content-text">{{info.genres}}</text>
-        </view>
-        <view>
-            导演：
-            <text wx:for="{{info.directors}}" wx:for-item="i" class="content-text"> {{i.name}} / </text>
-        </view>
-        
-        <view>
-            主演：
-            <text wx:for="{{info.casts}}" wx:for-item="i" class="content-text"> {{i.name}} / </text>
-        </view>
-        <view>
-            <button>点击播放</button>
-        </view>
-        <view>
-            <scroll-view scroll-x="true" style="width: 100%;">
-            <view style="width: 1500rpx;">
-                <image wx:for="{{info.casts}}" wx:for-item="item" class="content-casts-img" style="width:300rpx;height:420rpx;" src="{{item.avatars.large}}"></image>  
-                </view>
-            </scroll-view>
-               
-        </view>
-        <view>
-                <text>上映年份{{info.year}}</text>
-        </view>
-        
-        <view>
-            简介：
-                <text style="font-size:35rpx;">{{info.summary}}</text>
-        </view>
-            
-        </view>
+      <text wx:for="{{info.directors}}" wx:for-item="i" class="content-text"> {{i.name}}/</text>
+    </view>
+    <view>
+      <text wx:for="{{info.casts}}" wx:for-item="i" class="content-text"> {{i.name}}/</text>
+    </view>
+    <view class="content-text">
+      <text>上映年份{{info.year}}</text>
+    </view>
+  </view>
+</view>
+<view class="content-btn">
+  <button type="frimary">点击播放</button>
+</view>
+<view style="padding-top:30rpx;">
+演出人员：
+  <scroll-view scroll-x="true" style="width: 100%;">
+    <view style="width: 1500rpx;">
+    <view wx:for="{{info.casts}}" wx:for-item="item" class="content-casts">
+    <image class="content-casts-img" style="width:300rpx;height:420rpx;" src="{{item.avatars.large}}"></image>
+    <view style="font-size:30rpx;">{{item.name}}</view>
+    </view>
+
+    </view>
+  </scroll-view>
+</view>
+<view class="synopsis">
+  简介：
+  <text style="font-size:30rpx;">{{info.summary}}</text>
 </view>

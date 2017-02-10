@@ -12,6 +12,9 @@
   background: white;
   margin:0 0 20rpx 0;
 }
+.seeks button{
+    background:#1aade9;
+}
 .swiper-box{ 
     display: block;
 }  

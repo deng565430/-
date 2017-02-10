@@ -1,19 +1,31 @@
-<view></view>
-<view class="mytitle">{{title}}</view>
-<view wx:for="{{list}}" class="content" data-movieurl="../details/details?id={{item.id}}" bindtap="bindViewTap">
-  <view  class="content-img">
-    <image style="width: 170rpx; height: 210rpx;" src="{{item.images.medium}}"  class="content-image" ></image>
-    <view class="content-text">
-        <view>名称：{{item.title}}</view>
-        <view>  {{item.original_title}}({{item.year}})</view>
-        <view>类型：{{item.genres}}</view>
-        <view class="content-grade">{{item.rating.average}}</view>
+<view>
+  <view class="mytitle">{{title}}</view>
+  <view>
+    <view wx:for="{{list}}" class="content" data-movieurl="../details/details?id={{item.id}}" bindtap="bindViewTap">
+      <view class="content-img">
+        <image style="width: 170rpx; height: 210rpx;" src="{{item.images.medium}}" class="content-image"></image>
+        <view class="content-text">
+          <view>{{item.title}}</view>
+          <view>{{item.genres}}</view>
+          <view>主演:
+            <text wx:for="{{item.directors}}" wx:for-item="i">{{i.name}}、</text>
+          </view>
+          <view> {{item.original_title}}({{item.year}})</view>
+          <view class="content-grade" wx:if="{{item.rating.average>0}}">{{item.rating.average}}
+            <text style="font-size:23rpx"> 分</text>
+          </view>
+          <view class="content-grade" style="font-size:30rpx;" wx:else> 暂无评分</view>
+          <view class="content-grade">
+            <button type="warn">查看</button>
+          </view>
+        </view>
+      </view>
     </view>
-  </view>
-</view>
- <view class="list-loadtxt" wx:if="{{(!list||list.length<=0)}}">
+    <view class="list-loadtxt" wx:if="{{(!list||list.length<=0)}}">
       <text>列表数据为空</text>
     </view>
     <view class="list-loadtxt" wx:if="{{isBottom}}">
-      已加载到最低端
+      已加载到最底端
     </view>
+  </view>
+</view>
