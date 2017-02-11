@@ -37,11 +37,11 @@
     "position": "bottom",
     "backgroundColor": "#ececec",
     "color": "black",
-    "selectedColor": "#3a862f"
+    "selectedColor": "#3097fd"
   },
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": false
 }

@@ -51,6 +51,7 @@
     margin-top: 14rpx;
     color:white;
     background: #3097fd;
+    line-height: 100rpx;
 }
 .content-btn button:last-child{
     margin-left:50rpx;
